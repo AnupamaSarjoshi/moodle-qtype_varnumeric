@@ -2,6 +2,25 @@
 
 ## Changes in 2.0
 
+* This version is compatible with Moodle 5.0.
+* Fixed coding style issues.
+* Defined excluded hash fields and implemented conversion of legacy backup data
+  to align with new question data format (per MDL-83541).
+* Fixed bug where numeric subquestion feedback text was displayed inline in combined questions.
+* Fix backup and restore tests to run synchronously in Moodle 4.4.
+* Added new validation to the edit form to ensure teacher's answer is in the expected form.
+* Fixed a bug where adding images to feedback resulted in errors for combined numeric subquestions
+* Fixed display issue with numeric subquestion answers inserting an unwanted line break.
+* Fixed bug where the Combined Numeric subquestion input appeared on a new line.
+* Automation test failures are fixed.
+* Added a new option to the question editing form: “If scientific notation is not formatted correctly”,
+  allowing users to choose whether to accept a space between the number and unit as a valid response.
+* Combined\Numeric: Added "Feedback for correct response" field.
+* Added checks for empty variables to prevent save errors on the edit form.
+
+
+## Changes in 2.0
+
 * This version works with Moodle 4.0.
 * Switch from Travis to Github actions.
 
